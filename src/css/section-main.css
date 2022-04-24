@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Open+Sans:wght@500&display=swap');
+/*
+	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+*/
+:root{
+	--primary-color: #f8f9f7;
+	--text-color: #1f1d2b;
+	--text-color-green: #39bda7;
+	--button-color: #1e1d30;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h1,h2{
+	font-size: 3.5rem;
+}
+body{
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2{
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+
+main{
+	width: 100vw;
+	height: 100vh;
+	padding-left:50px ;
+	padding-right: 50px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto;
+}
+
+/*Card 1, search engine*/
+#card-1{
+	width:100%;
+	padding-top: 70px;
+	padding-left: 0px;
+	padding-right: 70px;
+	display: flex;
+	flex-flow: column wrap;
+	align-content: center;
+}
+#card-1 .text-info{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+#card-1 .text-info h1 {
+	margin-bottom: 25px;
+}
+
+#card-1 input{
+
+	width: 100%;
+	height: 60px;
+	padding: 20px;
+}
+
+/*Card 2, info of weather app*/
+#card-2{
+	color: #ffff;
+	padding: 30px;
+	width: 100%;
+	background-image: url('https://i.imgur.com/8Lxwosa.jpg');
+	background-position:center;
+	background-size: cover;
+}
+#card-2 .card-2__items{
+	width: 100%;
+	height: 500px;
+	border-radius:10px;
+	border: 1px solid var(--text-color);
+
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-content: center;
+	padding: 30px;
+}
+#card-2 .card-2__items{
+    backdrop-filter: blur(13px) saturate(137%);
+    -webkit-backdrop-filter: blur(13px) saturate(137%);
+    background-color: rgba(17, 25, 40, 0.61);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+#card-2 .card-2__items div{
+	width: 100%;
+	height:28px;
+}
+#card-2 .card-2__items div:nth-child(3){
+	width: 100%;
+	padding-top: 20px;
+	text-align: center;
+}
+#card-2 .card-2__items div:nth-child(3) h1{
+	font-size: 5rem;
+}
